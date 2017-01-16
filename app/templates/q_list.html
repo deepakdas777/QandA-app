@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="test-name">
+  <h2> Online Test </h2>
+  <p> Answer all questions each has  choices</p>
+</div>
+<br>
+<br>
+<form action= 'result/' method = "POST" >
+  {% for question in questions %}
+    <div class='question'>{{question.question_num}}. {{ question.question }}</div><br>
+
+     <div class='choices'>
+      a<input type = "radio" name="{{question.id}}" value="{{question.choice1}}">{{question.choice1}}<br>
+      b<input type = "radio" name="{{question.id}}" value="{{question.choice2}}">{{question.choice2}}<br>
+      c<input type = "radio" name="{{question.id}}" value="{{question.choice3}}">{{question.choice3}}<br>
+      d<input type = "radio" name="{{question.id}}" value="{{question.choice4}}">{{question.choice4}}<br>
+      e<input type = "radio" name="{{question.id}}" value="{{question.choice5}}">{{question.choice5}}<br>
+    </div><br>
+    <br>
+  {% endfor %}
+  <input type="submit" class="submit" id="submit" value="Submit"/>
+  {% csrf_token %}
+
+</form>
+{% endblock %}

@@ -1,0 +1,42 @@
+
+.page-header {
+    background-color:#00FFFF;
+    margin-top: 0;
+    padding: 20px 20px 20px 20px;
+}
+
+h1 {
+    font-family: sans-serif;
+    color:#FF0000;
+}
+
+.test-name {
+  background-color:#F5FFFA;
+}
+
+.question{
+      font-size: x-large;
+      font-family: sans-serif;
+      background-color: #FFF5EE;
+}
+
+.choices{
+      font-size: large;
+      font-family: monospace;
+      background-color: #C0C0C0;
+}
+.submit {
+  background-color:#00FF7F;
+  border: none;
+  color: white;
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.result {
+
+}
