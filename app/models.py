@@ -3,6 +3,7 @@ from django.db import models
 
 
 class Question(models.Model):
+    """ model class question with fields for question number,question,choices and answer"""
     question_num = models.CharField(max_length = 2)
     question = models.CharField(max_length = 200)
     choice1 = models.CharField(max_length = 200)
